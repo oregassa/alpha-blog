@@ -5,8 +5,16 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+
+  ## The line bellow use to be: (get 'welcome/home', to; 'welcome#home')
+  ## It's changed because it needs to go straight the home page.
+  ## You can see in (rake routes) to see the route.
+  ## Now change it in the (views) home and about file.
   root 'pages#home'
   get 'about', to: 'pages#about'
+  ## The line above use to be: (get 'welcome/about', to: 'welcome#about')
+  ## This is changed to follow-up to the home page.
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
