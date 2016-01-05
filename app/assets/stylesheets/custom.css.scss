@@ -24,6 +24,7 @@ $navbar-default-bg: #33FFCC;
 .jumbotron {
 	background-image: asset-url('blog_image.jpg');
 	background-size: 80px 100px;
+	height: 470px;
 }
 
 .jumbotron h1 {
@@ -35,7 +36,7 @@ $navbar-default-bg: #33FFCC;
 }
 
 .btn-xlarge {
-	font-size: 1.8;
+	font-size: 1.8em;
 	background-color: #33FFCC;
 	color: orange;
 }
@@ -64,8 +65,6 @@ footer ul li {
 	float: left;
 	margin-left: 15px;
 }
-
-
 
 
 
