@@ -41,10 +41,21 @@ $navbar-default-bg: #33FFCC;
 	color: orange;
 }
 
+.article-actions {
+	border-top: 1px double #606060;
+	padding-top: 5px;
+}
+
+
+.description {
+	margin-top: 0;
+}
+
+
 footer {
 	margin-top: 45px;
 	padding-top: 5px;
-	border-top: double #003399;
+	border-top: double #606060;
 	color: orange;
 }
 
