@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby "2.2.4"
 
 gem 'rails', '4.2.3'
 gem 'bcrypt',  '~> 3.1.7'
@@ -17,10 +16,12 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-group :production 
+
+group :production do
 	gem 'pg'
-	gem 'rails_12factor'
+	gem 'rails_12factor', group: :production
 end 
+ruby "2.2.4" 
 
 
 
