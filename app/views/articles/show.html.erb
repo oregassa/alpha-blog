@@ -1,4 +1,24 @@
 <h2 align="center">Title: <%= @article.title %></h2>
+
+<div align='center'>
+<% if @article.user %>
+  <ul class='user-listing'>
+    <div clas='row center'>
+	  <div class='well col-md-4 col-md-offset-4'>
+	    <li>Created by:</li>
+	    <%= link_to gravatar_for(@article.user), user_path(@article.user) %>
+	    <li class='article-title'>
+	      <%= link_to @article.user.username, user_path(@article.user) %>
+	    </li>
+	    <li>
+	      <small><%= pluralize(@article.user.articles.count,'article') if @article.user.articles %></small>
+	    </li>
+	  </div>
+	</div>
+  </ul>
+<% end %>
+</div>
+
 <div class="well col-xs-8 col-xs-offset-2">
   <h4 class="center description"><strong>Description:</strong></h4>
   <hr>
